@@ -1,0 +1,48 @@
+.chat__container {
+  display: grid;
+  place-items: center center;
+  border: 1px solid black;
+  /* min-width: 800px;
+  max-width: 1000px;
+  max-height: 800px;
+  border-radius: 10px;
+  width: 100%;
+  height: 95vh; */
+  margin: 0 auto;
+  grid-gap: 10px;
+  grid-template: 
+              'nickname__input nickname__btn webchat__mensagens webchat__mensagens' 5vh
+              'nickname__list nickname__list webchat__mensagens webchat__mensagens' 20vh
+              'nickname__list nickname__list webchat__mensagens webchat__mensagens' 30vh
+              'mensagem__input mensagem__input mensagem__input mensagem__btn' 8vh
+              / 1fr 1fr 1fr 1fr;
+}
+
+.nickname__input {
+  grid-area: nickname__input;
+}
+
+.nickname__btn {
+  grid-area: nickname__btn;
+}
+
+.nickname__list {
+  grid-area: nickname__list;
+  background-color: orange;
+  border: 1px solid black;
+}
+
+.webchat__mensagens {
+  grid-area: webchat__mensagens;
+  background-color: purple;
+}
+
+.mensagem__input {
+  grid-area: mensagem__input;
+  border: 1px solid black;
+  background-color: aquamarine;
+}
+
+.mensagem__btn {
+  grid-area: mensagem__btn
+}
