@@ -1,25 +1,26 @@
 .chat__container {
   display: grid;
-  place-items: center center;
-  border: 1px solid black;
+  /* place-items: center center;
+  border: 1px solid black; */
   /* min-width: 800px;
   max-width: 1000px;
   max-height: 800px;
   border-radius: 10px;
   width: 100%;
   height: 95vh; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   grid-gap: 10px;
   grid-template: 
               'nickname__input nickname__btn webchat__mensagens webchat__mensagens' 5vh
               'nickname__list nickname__list webchat__mensagens webchat__mensagens' 20vh
               'nickname__list nickname__list webchat__mensagens webchat__mensagens' 30vh
               'mensagem__input mensagem__input mensagem__input mensagem__btn' 8vh
-              / 1fr 1fr 1fr 1fr;
+              / 1.5fr 0.5fr 1fr 0.5fr;
 }
 
 .nickname__input {
   grid-area: nickname__input;
+  width: 100%;
 }
 
 .nickname__btn {
